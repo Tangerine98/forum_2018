@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forum 2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129190100-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-129190100-1');
+    </script>
+    
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="css/card.css" rel="stylesheet" type="text/css" media="screen"/>-->
+    <link href="css/card.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/navbar.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/materialize.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar-fixed z-depth-2"  id="navbar-mine" role="navigation">
+        <div class="nav-wrapper">
+            <ul class="hide-on-med-and-down" style="margin-left:38.5%;">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#footer">Contact Us</a></li>
+              <li><a href="#download_modal" class="modal-trigger">Guildlines</a></li>
+            </ul>
+  
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class=" material-icons" style="color:black">menu</i></a>
+            <ul id="nav-mobile" class="sidenav" style="background-color: #263238;">
+              <li><a style="color: #ffffff" href="#home">Home</a></li>
+              <li><a style="color: #ffffff" href="#events">Events</a></li>
+              <li><a style="color: #ffffff" href="#footer">Contact Us</a></li>
+              <li><a style="color: #ffffff" href="#download_modal" class="modal-trigger">Downloads</a></li>
+            </ul>
+        </div>
+      </nav>
+
+      <div id="download_modal" class="modal">
+        <div class="modal-content left-align">
+          <h4>General Guildlines</h4>
+          <ol>
+            <li>The participant must have a valid ID proof which may be requested by organisers at any point of time</li>
+            <li>Possession and consumption of Alcohol/drugs is strictly prohibited</li>
+            <li>Possession of any illegal substance/object will be dealt with seriousness and will be reported to appropriate authorities</li>
+            <li>Any anti-social or/and indecent behavior will not be tolerated. Team officials of FORUM 2K18, FISAT Business School, FISAT has full rights to ask anyone to leave the campus immediately and stop their further participation in FORUM 2K18.</li>
+            <li>Any dangerous objects, inflammables, lasers and illegal materials will not be allowed</li>
+            <li>Any damage to the college infrastructure or to the facilities provided to the participant will be treated as a serious offense</li>
+            <li>Participants need to abide by FISAT rules during their stay</li>
+            <li>There shall be no refunds for any event under any circumstances</li>
+            <li>Changes in prizes for event winners will be solely decided if any, especially in case of multiple winners for the same event by the fest committee.</li>
+            <li>All participants are encouraged to maintain discipline and good conduct during their stay at FISAT</li>
+            <li>Event rules and rounds are subjected to change as per discretion of the judges</li>
+            <li>In case of any disputes, the decision taken by FORUM event team would be final and binding</li>
+            <li>All the participants are required to report 30 minutes before the start time</li>
+            <li>Details provided during registration will be used to provide certificates and cannot be changed at a later point</li>
+            <li>Participants once registered under any category, cannot cancel his/her registration</li>
+            <li>Please choose the event category carefully, confirmed registrations are non-refundable, non-transferable and cannot be modified. Provide us with a secure email ID/mobile number that you can access regularly, since this will be our primary means of communication during the run up to the event</li>
+            <li>You take full responsibility for participating in the FORUM 2K18 events and do not hold the organizing committee or any of its members or entities responsible for any injury or accident</li>
+            <li>You agree that FORUM 2K18 shall not be liable for any loss, damage, illness or injury that might occur as a result of your participation in the event</li>
+            <li>You agree to abide by the instructions provided by the organizers from time to time in the best interest of the conduct of FORUM 2K18.</li>
+            <li>You may acknowledge and agree that your personal information can be stored and used by FORUM 2K18 in connection with the organization, promotion and administration of the event and for the compilation of statistical information</li>
+            <li>You confirm that, in the event of adverse weather conditions, major incidents or threats on the day, any of the force majeure or restriction by authority, the organizers reserve the right to stop/cancel/postpone the event</li>
+            <li>You understand that confirmed registrations are non-refundable, non-transferable and cannot be modified. The organizers reserve the right to reject any application without providing reasons. Any amount collected from rejected applications alone will be refunded in full (excluding bank charges wherever applicable)</li>
+            <li>For any reason you cannot turn up on Event day, no refund shall be provided</li>
+          </ol>
+        </div>
+      </div>
+
+    <!--  <div class="parallax-container">
+      <div class="parallax"><img style="width:100%" src="images/index.jpeg"></div>
+    </div>-->
+    <div id="home">
+      <img class="responsive-img " src="images/index.jpeg">
+    </div>
+    <div class=" event_1">    
+    <div class="container">
+     
+     <div id="events" style="padding-top:3.5%;">
+       <h1 class="center" style="margin-top:0%;">Events</h1>
+
+       <div class="row">
+         
+       <div class="col s12 m4" id="f1_container">
+         <div class="card-1" style="width: 300px !important;height: 400px !important; ">
+         <div class="card__wrapper shadow">
+           <div class="card__side is-active">
+             <img class="responsive-img" style="max-width:50%;max-height:35%;" src="images/edens_chieftains.png">
+             <h5>Eden's Cheiftains</h5>
+             <h6 class="sub-heaedings">Best Manager</h6>
+             <h6 class="prize-money">Winner's:75,000</h6>
+             <h6 class="prize-money">Runner's Up:35,000</h6>
+           </div>
+           <div class="card__side card__side--back">
+             <p>A national level competition, if you think you have the perks to be the manager the world wants,then bring it.</p> 
+                <a class="waves-effect waves-light btn"  style="background-color:transparent;color:#fff;border: 1px solid #fff;" href="https://www.thecollegefever.com/events/forum-2018-hZ16Mh7Ag2">Register</a>
+               <a class="waves-effect  btn modal-trigger" style="background-color:transparent;color:#fff;border: 1px solid #fff;" href="#modal_eden">Rules</a>
+           </div>
+           </div>
+         </div>
+         </div>
+
+         <div id="modal_eden" class="modal">
+            <div class="modal-content">
+              <h4>Rules</h4>
+              <!--<p><h3>Rules</h3></p>--->
+              <br><br>
+              <ol class="left-align">
+                <li>Participants cannot participate in any other event.Multiple participants from same institution are allowed. Tags or ID cards are a must.</li><br>
+                <li>Each participant must have a letter of eligibility from  the affiliated institution  indicating the course enrolled in and year of admission to the same.</li><br>
+                <li>During the rounds, usage of mobile phones and lap tops may be restricted to off-event times if so required by the organisers.</li><br>
+                <li>Laptops, dongles, audio visual devices will not be provided. </li><br>
+                <li>Participants may be subject to creative exercises (talent based) or physically strenuous rounds as per event norms</li><br>
+                <li>In the event of multiple participants from an institution, any attempts at unfair practices, abetment, sharing confidential instructions etc will be taken seriously.</li><br>
+                <li>Prize money is subject to fulfilment of sponsor commitments.</li><br>
+                <li>If any participant does not report at the mentioned time, his/her participation is subject to cancellation</li><br>
+                <li>In case of any dispute organisers’ decision shall be final</li>
+              </ol>
+            </div>
+          </div>
+
+         <div class="col s12 m4" id="f1_container">
+           <div class="card-2" style="width: 300px !important;height: 400px !important;">
+           <div class="card__wrapper shadow">
+             <div class="card__side is-active">
+               <img class="responsive-img"  style="padding-left:2.5%;width:80%;height:37%;" src="images/brain_wave.png">
+               <h5>Brain wave</h5>
+               <h6 class="sub-heaedings">Business Quiz</h6>
+               <h6 class="prize-money">Winner's:75,000</h6>
+               <h6 class="prize-money">Runner's Up:35,000</h6>
+             </div>
+             <div class="card__side card__side--back">
+               <!--<p>Details</p>-->
+               <p>The ultimate platform for you to take your potential to reach new heights in the quiz world, Fisat business scchool presents to you 'Brain wave', a national level quiz competition</p>
+               <a class="waves-effect waves-light btn" style="background-color:transparent;color:#fff;border: 1px solid #fff"; target="_blank" href="https://www.thecollegefever.com/events/forum-2018-hZ16Mh7Ag2">Register</a>
+               <a class="waves-effect waves-light btn modal-trigger" style="background-color:transparent;color:#fff;border: 1px solid #fff;" href="#modal_brain_wave">Rules</a>
+             </div>
+           </div>
+           </div>
+           </div>
+
+            <div id="modal_brain_wave" class="modal">
+              <div class="modal-content left-align">
+                <h4>Rules</h4>
+                <ol>
+                  <br><li><b>Preliminaries – Online and Offline</b></li><br>
+                  <ol>
+                    <li>There are 2 modes of entry for both Corporate and Student teams:</li>
+                    Mode 1: Online Prelims 2018 (November 24)<br>
+                    Mode 2:    Offline prelims 2018 (December 3)<br>
+                    <li>Each team will consist of two participants. The participants should be from the same organization/ institution.<b>Cross teams will strictly not be permitted.</b></li>
+                    <li>Team composition cannot be changed after the preliminary rounds</li>
+                    <li>Teams will have to register to participate for both online and offline preliminaries.</li>
+                    <li>A minimal registration fee will be charged for teams participating in the offline prelims. The fees would be Rs.600/ team</li>
+                    <li>Each team is allowed to participate in one or all the two online prelims with the understanding that the best score will be considered for the screening. The 3 online prelims are independent of each other and <b>aggregate scores will not be considered.</b></li>
+                    <li>In each round of the online prelims, only one submission per team will be allowed. Multiple logins, entries and submissions will lead to disqualification of the team.</li>
+                    <li>Teams which have not qualified in any of the Online Prelims can make another attempt by attending the Offline Prelims to be held in the FISAT Business School Campus on December 3rd. This will be the final mode of entry into the Quarter-Finals.</li>
+                    <li>Teams qualifying in the online prelims and offline Prelims will compete in the Quarter-Finals to be held on December 3rd  at the FISAT Business School Campus.</li>
+                  </ol> 
+                  <li>Quarter-Finals </li>
+                  <ol>
+                    <li>Quarter-final rounds for Online and offline students will be held separately.</li>
+                    <li>A total of 16 teams will enter unto quarter finals which includes Eight teams selected through the two online prelims and eight teams from the offline prelim </li>
+                    <li>4 winning from each category (Online & offline) would be moving to the semi-finals.</li>
+                  </ol>
+                  <li>Semi-Finals </li>
+                  <ol>
+                    <li>8 Winning teams from the quarterfinal would be competing with each other in this round. </li>
+                    <li>6 best learns would be moving to the grand finale of BRAINWAVE 2018.</li>
+                  </ol>
+                  <li>Grand Finale</li>
+                  <ol>
+                    <li>The Grand Finale will feature 6 top teams from each category.</li>
+                    <li>The winning team will win Rs. 75,000/- as cash prize.</li>
+                    <li>The Runner Up team in will win Rs. 35,000/- as cash prize. </li>
+                  </ol>
+                </ol>
+                <b>Note:</b>
+                <p>In case of an unforeseen emergency that results in the inability of a team which has qualified from the online prelim to participate, the following rules shall apply:</p>
+                <ol>
+                  <li>If the FORUM BRAINWAVE 2018 Organizing team is informed of the qualifying team’s inability to be present for the quarter-finals on December 3rd, 2018 at least 3 days before the event or prior, the next team with the best qualifying score from the online preliminaries will be invited. Such successive invitations will continue till team number 10 on the list. If the 10th team on the Top Ten scorers list of the online preliminaries also declines participation due to valid reasons, then the slot shall be opened to accommodate a team from the offline preliminary round that will be conducted on the campus.</li>
+                  <li>If the FORUM BRAINWAVE 2018 Organizing team is not informed of the qualifying team’s inability to be present for the quarter-finals on December 3rd, 2018 at least 3 days before the event, the vacant slot will be opened to accommodate a team from the offline preliminary round that will be conducted on the campus.</li>
+                </ol>
+              </div>
+            </div>
+
+           <div class="col s12 m4" id="f1_container">
+             <div class="card-3" style="width: 300px !important;height: 400px !important;">
+             <div class="card__wrapper shadow">
+               <div class="card__side is-active">
+                 <img class="responsive-img"  style="padding-top: 12.5%; "src="images/actice.png">
+                 <h5>ACTICE</h5>
+                 <h6 class="sub-heaedings">Short Film </h6>
+                 <h6 class="prize-money">Winner's:1,00,000</h6>
+               </div>
+               <div class="card__side card__side--back">
+                 <p>This is nice for exposing more information about an image.</p>
+                 <p>Any content can go here.</p>
+                 <a class="waves-effect waves-light btn" style="background-color:transparent;color:#fff;border: 1px solid #fff;" target="_blank" href="https://www.thecollegefever.com/events/forum-2018-hZ16Mh7Ag2">Register</a>
+               <a class="waves-effect  btn modal-trigger" style="background-color:transparent;color:#fff;border: 1px solid #fff;" href="#modal_actice">Rules</a>
+               </div>
+             </div>
+             </div>
+             </div>
+            
+
+            <div id="modal_actice" class="modal">
+              <div class="modal-content left-align">
+                <h4>Rules</h4>
+                <ol>
+                  <br><li><b>Eligibility</b></li><br>
+                  The contest is open to industrialists. A team can have maximum ten members. One team can only submit ONE entry. One person can only participate in ONE team.Maximum 2 teams from a company.
+                  <br><li><b>Entry Fee</b></li><br>
+                  <ol>
+                    <li><b>INR 2500.00 per entry</b> to be paid by November 15, 2018.</li>
+                    <li><b>Method:</b>Will be informed shortly</li>
+                  </ol>
+                  <br><li><b>Theme</b></li><br>
+                  The theme of the video is <b>“Total Societal Impact (TSI)– A new business lens to solve problems of the nature”.</b> TSI is the total benefit to society from a company’s products, 
+services, operations, core capabilities, and activities. 
+The video needs to depict how your 
+company uses the TSI approach in reducing the risk of negative events for the company and how new opportunities are opened. The video should bring out how TSI can be a better than CSR in solving the problems of the nature and the human kind. 
+                  <br><li><b>Format</b></li><br>
+                  <ol>
+                    <li>Videos have to be in English.</li>
+                    <li>Video should be between 5 to 10 minutes in length. Videos that are not in between of the length mentioned will be disqualified. </li>
+                    <li>Plagiarism of any kind will result in disqualification.</li>
+                  </ol>
+                  <br><li><b>Submission</b></li><br>
+                  Video should be uploaded in YouTube on or before November 30, 2018 (can upload it in the private mode) and email the link of the video to alenashelly3@gmail.com and amala.ross92@gmail.com latest by November 30, 2018, 4 pm
+                  <br><li><b>Important dates</b></li><br>
+                  <b>15th November 2018 (4.00 pm):</b>Contest Entry Form submissions due. Access the Google from <a href="https://goo.gl/forms/7v26n7HHE7Zby0Mv1">here</a><br>
+                  <b>30th November 2018 (4.00 pm):</b>Video submissions due<br>
+                  <b>2th December 2018:</b>Announcement of shortlisted candidates<br>
+                  <b>4th December 2018:</b>Prize presentation during Forum 2018 conducted at FISAT B School<br>
+                  <br><li><b>Official Contest Rules and Regulations:</b></li><br>
+                  Videos  must  be  appropriate  for  viewing  by  the  general  public  and by  a  multi-cultural international community and must not contain material that is obscene, defamatory, libellous,pornographic, and offensive. All work will be given credit to the creators. FISAT B School do not  assume  responsibility  or  liability  for  any  video  or  portion  thereof,  or  for  any  claims,damages,  or  losses  resulting  from  the  use  or  dissemination  of  any  video  submitted  in  this contest. The judges’ decision is final. 
+                </ol>
+              </div>
+            </div>
+       
+       <div class="row">
+            
+             <div class="col offset-m2 m4 s12" id="f1_container" style="margin-left: 16.66667%">
+              <div class="card-4" style="width: 300px !important;height: 400px !important;"> 
+              <div class="card__wrapper shadow">
+                 <div class="card__side is-active">
+                   <img class="responsive-img" style="widows: 62px;height:37%;padding-top: 6%;" src="images/polemicist.png">
+                   <h5>Polemicist</h5>
+                   <h6 class="sub-heaedings">Debate </h6>
+                   <h6 class="prize-money">Winner's:75,000</h6>
+                   <h6 class="prize-money">Runner's Up:35,000</h6>
+                 </div>
+                 <div class="card__side card__side--back">
+                   <p>This is nice for exposing more information about an image.</p>
+                     <p>This is nice for exposing more information about an image</p>
+                   <p>Any content can go here.</p><br><br>
+                   <a class="waves-effect waves-light btn" style="background-color:transparent;color:#fff;border: 1px solid #fff;" target="_blank" href="https://www.thecollegefever.com/events/forum-2018-hZ16Mh7Ag2">Register</a>
+               <a class="waves-effect  btn modal-trigger" style="background-color:transparent;color:#fff;border: 1px solid #fff;"  href="#modal_polemicist">Rules</a>
+                 </div>
+               </div>
+               </div>
+               </div>
+
+               <div id="modal_polemicist"class="modal">
+                 <div class="modal-content">
+                   <h3>Rules</h3>
+                   <p class="left-align">Debate will be a team event, with each team having two members. The event will have three rounds.First round and second rounds will have eliminations. Only four teams will qualify to the final round.</p>
+
+                 </div>
+               </div>
+
+               <div class="col m4 s12" id="f1_container">
+                 <div class="card-5" style="width: 300px !important;height: 400px !important;">
+                 <div class="card__wrapper shadow">
+                   <div class="card__side is-active">
+                     <img class="responsive-img"  src="images/strategos.png">
+                     <h5>Straegos</h5>
+                     <h6 class="sub-heaedings">Stratery Presentation</h6>
+                     <h6 class="prize-money">Winner's:75,000</h6>
+                     <h6 class="prize-money">Runner's Up:35,000</h6>
+                   </div>
+                   <div class="card__side card__side--back">
+                     <p>This is nice for exposing more information about an image.</p>
+                     <p>Any content can go here.</p>
+                     <a class="waves-effect waves-light btn" style="background-color:transparent;color:#fff;border: 1px solid #fff;" target="_blank" href="https://www.thecollegefever.com/events/forum-2018-hZ16Mh7Ag2">Register</a>
+                     <a class="waves-effect  btn modal-trigger" style="background-color:transparent;color:#fff;border: 1px solid #fff;" href="#modal_strategos">Rules</a>
+                   </div>
+                 </div>
+                 </div>
+                 </div>
+
+                 <div id="modal_strategos" class="modal">
+                   <div class="modal-content">
+                    <h4>Rules</h4>
+                    <p class="left-align">Business Strategy Game will be a team event, with each team having two members. The event will have two rounds. Of the total teams, only six teams would qualify for the final stage. The teams are required to do a power point presentation and have to bring their laptops and pen drive.</p>
+                   </div>
+
+                 </div>
+       </div>
+                
+      </div>
+    </div>
+     
+    </div>
+    <div style=" margin-top: 0%;"id="map"></div>
+
+    <footer class="page-footer" id="footer">
+      <div class="container" style="height: 300px;">
+          <div class="row">
+                <h5 style="font-size:50px;">Contact Us</h5>
+                <div style="padding-top:2%;">
+                    <div style="font-family: roboto-medium; font-size:16.5px;">
+                      <img class="responsive-img" style="height:1.5%; width:1.5%; "  src="images/female.png"> Sangeeta:   +91 8089961781<br>
+                      <img class="responsive-img" style="height:2%; width:2%; "  src="images/person.png"> Anit Itoop Vattoly:   +91 8281594265
+                    </div>
+                  </p>
+                  <p style="padding-top:10.5%">
+                      <a href="https://www.facebook.com/events/331308984086389/" target="_blank" class="fa fa-facebook" > forum 2018</a>
+                      <a href="#" class="fa fa-instagram"> @forum2k18</a>
+                  
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <div class="container">
+            Created by <a class="brown-text text-lighten-3"  target="_blank" href="https://www.linkedin.com/in/nandini-menon1998/">Nandini Menon</a> and <a   target="_blank" class="brown-text text-lighten-3" href="https://www.linkedin.com/in/mohit-rajan-e-756412160/">Mohit Rajan E</a><br>
+            Designed by <a class="brown-text text-lighten-3"  target="_blank" href="https://www.linkedin.com/in/hareesh-c-s-1456aa160/" > Hareesh C S</a>
+          </div>
+       </div>
+  </footer>
+   <script>
+    function initMap() {
+      var fisat = {lat: 10.232954, lng: 76.408754};
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 16, center: fisat});
+      var marker = new google.maps.Marker({position: fisat, map: map});
+    }
+  </script>
+  
+   
+   <!--  Scripts-->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="js/materialize.js"></script>
+   <script src="js/init.js"></script>
+   <script src="js/card.js"></script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuuU1CLP8qBFCrkXJU6fNRftZyqs7jeAI&callback=initMap">
+   </script>
+   
+</body>
+</html>

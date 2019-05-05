@@ -1,0 +1,139 @@
+@font-face {
+  font-family: fax-sans;
+  src: url("Fax Sans Beta.otf");
+  font-weight: bold;
+}
+
+@font-face{
+  font-family:code-bold;
+  src: url("CODE Bold.otf");
+}
+
+@font-face{
+  font-family:market_deco;
+  src: url("Market_Deco.ttf");
+}
+
+@font-face{
+  font-family: roboto-medium;
+  src: url("Roboto-Medium.ttf");
+}
+
+
+li{
+  padding: 1%;
+}
+.row{
+  margin: 0%;
+  margin-bottom: 0%;
+  margin-top:0%;
+}
+.prize-money{
+  font-size: 12.5px;
+  vertical-align:bottom;
+}
+/*setting fonts*/
+h1{
+  font-family: market_deco;
+
+}
+h5{
+  font-family: code-bold;
+}
+body{
+  font-family: fax-sans;
+  color:#fff;
+}
+.sub-heaedings{
+  font-family: roboto-medium;
+  font-size: 20px;
+}
+
+.event_1{
+  background: url("../images/backdrop.jpg");
+  background-size: cover;
+}
+.modal-content{
+  color:#000;
+}
+
+/*for sticky navbar*/
+#navbar-mine{
+    overflow: hidden;
+    background-color: #061032;
+}
+
+#navbar-mine li a {
+    /*color: rgb(13, 26, 38);
+    font-size: 0.7em;*/
+    color:#fff;
+    display: block;
+    height: 50px;
+    letter-spacing: 1px;
+   /* margin-left: 20%;*/
+    padding: 0 4px;
+    padding-right: 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+  #navbar-mine li a:hover {
+     border-bottom: 1px solid #e04f4f; 
+    color: rgb(116, 78, 78);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+  
+  /* Animated Bottom Line */
+  #navbar-mine li a:before, #navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background:#d32f2f;
+  }
+  
+  #navbar-mine li a:before {
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  #navbar-mine li a:after {
+    background:#d32f2f;
+    right: 0;
+     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); 
+  }
+  
+  #navbar-mine li a:hover:before {
+    background:#d32f2f;
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+  }
+  
+  #navbar-mine li a:hover:after {
+    background: transparent;
+    width: 100%;
+    /* transition: 0s; */
+  }
+
+footer {
+  background-color:#000  !important;
+  color: white !important;
+}
+
+.footer-copyright {
+  background-color:#3e1651 !important;
+}
+/*.fa-user, .fa-phone{*/
+  .fa{
+  padding-left: 2%;
+  font-family: roboto-medium;
+  
+}
+
+/*body{
+ # background: #006699;
+}*/
